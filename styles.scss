@@ -1,0 +1,61 @@
+$mainColor : #333;
+$titleColor : tomato;
+$fontColorMain : #EEE;
+$mainFontFam : sans-serif;
+
+:root {
+    font-size: 62.5%
+}
+
+%card {
+    border: 1px solid #999;
+    background: #EEE;
+    border-radius: 12px;
+    max-width: 25ch;
+    color: $mainColor;
+    font-size: 1.6rem;
+    h3{
+        font-size: 2em;
+        color : $titleColor;
+        text-shadow: 1px 1px 5px lightgray;
+    }
+    
+    p{
+        font-size: 1.1em;
+        padding: .3em;
+    }
+    button {
+        margin-bottom: 2rem;
+        
+    }
+}
+
+body {
+    background : $mainColor;
+    font-family: $mainFontFam;
+    color : $fontColorMain;
+    text-align: center;
+    
+    h1 {
+        font-size: 3rem;
+        color: $titleColor;
+        
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .2rem;
+        justify-content: center;
+        .card {
+            @extend %card;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+    }
+}
+
+

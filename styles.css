@@ -1,0 +1,52 @@
+:root {
+  font-size: 62.5%;
+}
+
+.container .card {
+  border: 1px solid #999;
+  background: #EEE;
+  border-radius: 12px;
+  max-width: 25ch;
+  color: #333;
+  font-size: 1.6rem;
+}
+
+.container .card h3 {
+  font-size: 2em;
+  color: tomato;
+  text-shadow: 1px 1px 5px lightgray;
+}
+
+.container .card p {
+  font-size: 1.1em;
+  padding: .3em;
+}
+
+.container .card button {
+  margin-bottom: 2rem;
+}
+
+body {
+  background: #333;
+  font-family: sans-serif;
+  color: #EEE;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: tomato;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */
